@@ -1,0 +1,1 @@
+python assembly_check.py --objects --mesh /home/fuji/PycharmProjects/FoundationPose/demo_data/test/mesh/Frame2_110.obj --translation 0 0 0 --rotation 0 0 0 --mesh /home/fuji/PycharmProjects/FoundationPose/demo_data/test/mesh/Frame2_110.obj --translation 1 0 0 --rotation 45 0 0
