@@ -1,1 +1,38 @@
-python assembly_check.py --objects --mesh /home/fuji/PycharmProjects/FoundationPose/demo_data/test/mesh/Frame2_110.obj --translation 0 0 0 --rotation 0 0 0 --mesh /home/fuji/PycharmProjects/FoundationPose/demo_data/test/mesh/Frame2_110.obj --translation 1 0 0 --rotation 45 0 0
+python assembly_check.py \
+    --mesh1 /home/fuji/PycharmProjects/FoundationPose/demo_data/Frame_bottom_OBJ/Frame_bottom.obj \
+    --translation1 0 0 0 \
+    --rotation1 0 0 0 \
+    --mesh2 /home/fuji/PycharmProjects/FoundationPose/demo_data/test/mesh/Frame2_110.obj \
+    --translation2 0 0.2 0 \
+    --rotation2 0 0 0 
+
+
+python assembly_check.py \
+    --mesh1 /home/fuji/PycharmProjects/FoundationPose/demo_data/Frame_bottom_OBJ/Frame_bottom.obj \
+    --translation1 0 0 0 \
+    --rotation1 0 0 0 
+    
+    
+    
+    python assembly_check.py \
+    --mesh1 /home/fuji/PycharmProjects/FoundationPose/demo_data/test/mesh/Frame2_110.obj \
+    --translation1 0 0 0 \
+    --rotation1 0 0 0 \
+    --mesh2 /home/fuji/PycharmProjects/FoundationPose/demo_data/Frame_bottom_OBJ/Frame_bottom.obj \
+    --translation2 0 0 0.2 \
+    --rotation2 0 0 0 \
+    --mesh3 /home/fuji/PycharmProjects/FoundationPose/demo_data/test/mesh/Frame2_110.obj \
+    --translation3 0 0 0.2 \
+    --rotation3 0 0 0 \
+    --mesh4 /home/fuji/PycharmProjects/FoundationPose/demo_data/test/mesh/Frame2_110.obj \
+    --translation4 0 0 0.3 \
+    --rotation4 0 0 0 \
+    --mesh5 /home/fuji/PycharmProjects/FoundationPose/demo_data/test/mesh/Frame2_110.obj \
+    --translation5 0 0 0.4 \
+    --rotation5 0 0 0 \
+    --mesh6 /home/fuji/PycharmProjects/FoundationPose/demo_data/test/mesh/Frame2_110.obj \
+    --translation6 0 0 0.5 \
+    --rotation6 0 0 0
+    
+Position (x, y, z): [0.000, 0.000, 0.200]
+Rotation (degrees): [0.000, 0.000, 0.000]

@@ -9,30 +9,13 @@ def create_folders():
     timestamp = int(time.time())
     
     # Create folders for RGB and depth images
-    rgb_folder = "data/rgb"
-    depth_folder = "data/depth"
+    rgb_folder = "demo_data/bottom/rgb"
+    depth_folder = "demo_data/bottom/depth"
     
     os.makedirs(rgb_folder, exist_ok=True)
     os.makedirs(depth_folder, exist_ok=True)
     
     return rgb_folder, depth_folder, timestamp
-
-def save_camera_intrinsics(pipeline, folder):
-    # Get the depth sensor's intrinsics
-    depth_sensor = pipeline.get_active_profile().get_device().first_depth_sensor()
-    depth_intrinsics = depth_sensor.as_video_stream_profile().get_intrinsics()
-    
-    # Create the camera matrix in the specified format
-    K = np.array([
-        [depth_intrinsics.fx, 0, depth_intrinsics.ppx],
-        [0, depth_intrinsics.fy, depth_intrinsics.ppy],
-        [0, 0, 1]
-    ])
-    
-    # Save to file with the specified format
-    with open(os.path.join(folder, 'Cam_K.txt'), 'w') as f:
-        for row in K:
-            f.write(' '.join([f'{x:.18e}' for x in row]) + '\n')
 
 def main():
     # Create folders
@@ -48,9 +31,6 @@ def main():
     
     # Start streaming
     pipeline.start(config)
-    
-    # Save camera intrinsics
-    save_camera_intrinsics(pipeline, "data")
     
     try:
         frame_count = 0

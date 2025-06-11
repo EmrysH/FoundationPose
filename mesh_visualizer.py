@@ -20,17 +20,29 @@ def visualize_mesh(mesh_path):
     # Compute vertex normals for better visualization
     o3d_mesh.compute_vertex_normals()
     
+    # Calculate mesh center and dimensions
+    mesh_center = o3d_mesh.get_center()
+    mesh_dims = o3d_mesh.get_max_bound() - o3d_mesh.get_min_bound()
+    coord_frame_size = np.max(mesh_dims) * 0.2  # 20% of the largest dimension
+    
+    # Create coordinate frame at mesh center
+    coordinate_frame = o3d.geometry.TriangleMesh.create_coordinate_frame(
+        size=coord_frame_size,
+        origin=mesh_center
+    )
+    
     # Create visualization window
     vis = o3d.visualization.Visualizer()
     vis.create_window()
     
-    # Add mesh to visualizer
+    # Add mesh and coordinate frame to visualizer
     vis.add_geometry(o3d_mesh)
+    vis.add_geometry(coordinate_frame)
     
     # Set up camera view
     vis.get_view_control().set_zoom(0.8)
     vis.get_view_control().set_front([0, 0, -1])
-    vis.get_view_control().set_lookat([0, 0, 0])
+    vis.get_view_control().set_lookat(mesh_center)
     vis.get_view_control().set_up([0, -1, 0])
     
     # Run visualization

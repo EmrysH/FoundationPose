@@ -1,0 +1,77 @@
+{
+    "assembly_plan_solar_panel_frame": {
+      "title": "Solar Panel Frame Assembly Plan",
+      "parts_identification": {
+        "BasePlate": "Grey base structure with a central opening and four peripheral slots (Picture 3). Quantity: 1",
+        "PivotBlock_Pink_1": "First pink block, acts as a lower pivot (Picture 6). Quantity: 1",
+        "PivotBlock_Pink_2": "Second pink block, acts as a lower pivot (Picture 6). Quantity: 1",
+        "UprightSupport_Red_1": "First red block, acts as an upright support (Picture 4). Quantity: 1",
+        "UprightSupport_Red_2": "Second red block, acts as an upright support (Picture 4). Quantity: 1",
+        "SupportArm_Orange_1": "First orange angled support arm (Picture 5). Quantity: 1",
+        "SupportArm_Orange_2": "Second orange angled support arm (Picture 5). Quantity: 1"
+      },
+      "connection_points_nomenclature": {
+        "BasePlate_Slot_A1": "A peripheral slot on the BasePlate for PivotBlock_Pink_1.",
+        "BasePlate_Slot_A2": "A peripheral slot on the BasePlate for PivotBlock_Pink_2 (typically adjacent or corresponding to Slot_A1 to form one side of the structure).",
+        "BasePlate_Slot_B1": "A peripheral slot on the BasePlate for UprightSupport_Red_1.",
+        "BasePlate_Slot_B2": "A peripheral slot on the BasePlate for UprightSupport_Red_2 (typically adjacent or corresponding to Slot_B1 to form the other side of the structure, opposite to A1/A2 side).",
+        "Part_Bottom_Tab": "Tab on the bottom of PivotBlocks and UprightSupports for insertion into BasePlate slots.",
+        "Part_Top_Groove_For_Arm": "Groove on the top surface of PivotBlocks and UprightSupports for SupportArm connection.",
+        "SupportArm_Lower_End_Tab": "Connection tab at the lower end of the SupportArm (connects to PivotBlock).",
+        "SupportArm_Upper_End_Tab": "Connection tab at the upper, angled end of the SupportArm (connects to UprightSupport)."
+      },
+      "assembly_steps": [
+        {
+          "step_number": 1,
+          "step_title": "Mount Pivot Blocks to Base Plate",
+          "parts_needed": [
+            "BasePlate",
+            "PivotBlock_Pink_1",
+            "PivotBlock_Pink_2"
+          ],
+          "instructions": [
+            "Take the BasePlate.",
+            "Orient the BasePlate. Select two appropriate peripheral slots for the pink PivotBlocks (e.g., BasePlate_Slot_A1 and BasePlate_Slot_A2). These should allow the PivotBlocks to be positioned as seen in the assembled Picture 1 (lower supports).",
+            "Insert the Part_Bottom_Tab of PivotBlock_Pink_1 into BasePlate_Slot_A1.",
+            "Insert the Part_Bottom_Tab of PivotBlock_Pink_2 into BasePlate_Slot_A2."
+          ]
+        },
+        {
+          "step_number": 2,
+          "step_title": "Mount Upright Supports to Base Plate",
+          "parts_needed": [
+            "Subassembly from Step 1",
+            "UprightSupport_Red_1",
+            "UprightSupport_Red_2"
+          ],
+          "instructions": [
+            "Take the subassembly from Step 1 (BasePlate with PivotBlocks attached).",
+            "Select the remaining two peripheral slots for the red UprightSupports (e.g., BasePlate_Slot_B1 and BasePlate_Slot_B2). These should be opposite the PivotBlocks to match the assembled Picture 1.",
+            "Insert the Part_Bottom_Tab of UprightSupport_Red_1 into BasePlate_Slot_B1. This support should correspond to PivotBlock_Pink_1 to later form a pair with SupportArm_Orange_1.",
+            "Insert the Part_Bottom_Tab of UprightSupport_Red_2 into BasePlate_Slot_B2. This support should correspond to PivotBlock_Pink_2 to later form a pair with SupportArm_Orange_2."
+          ]
+        },
+        {
+          "step_number": 3,
+          "step_title": "Attach Support Arms",
+          "parts_needed": [
+            "Subassembly from Step 2",
+            "SupportArm_Orange_1",
+            "SupportArm_Orange_2"
+          ],
+          "instructions": [
+            "Take the subassembly from Step 2.",
+            "For SupportArm_Orange_1:",
+            "  Identify PivotBlock_Pink_1 and UprightSupport_Red_1 which form one side of the support structure.",
+            "  Connect the SupportArm_Lower_End_Tab of SupportArm_Orange_1 into the Part_Top_Groove_For_Arm of PivotBlock_Pink_1.",
+            "  Connect the SupportArm_Upper_End_Tab of SupportArm_Orange_1 into the Part_Top_Groove_For_Arm of UprightSupport_Red_1.",
+            "For SupportArm_Orange_2:",
+            "  Identify PivotBlock_Pink_2 and UprightSupport_Red_2 which form the other side of the support structure.",
+            "  Connect the SupportArm_Lower_End_Tab of SupportArm_Orange_2 into the Part_Top_Groove_For_Arm of PivotBlock_Pink_2.",
+            "  Connect the SupportArm_Upper_End_Tab of SupportArm_Orange_2 into the Part_Top_Groove_For_Arm of UprightSupport_Red_2.",
+            "Ensure both arms are securely fitted, resembling the assembled structure in Picture 1."
+          ]
+        }
+      ]
+    }
+  }

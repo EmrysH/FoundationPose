@@ -24,5 +24,5 @@ def create_rgb_image(r, g, b, output_filename="output.png"):
 
 if __name__ == "__main__":
     # Example usage: Create a red image (255, 0, 0)
-    create_rgb_image(177, 25,25, "material.png")
+    create_rgb_image(255, 252,250, "material.png")
     
